@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Github, Linkedin, Code, ExternalLink, Mail } from 'lucide-react';
 import Link from 'next/link';
 import { Badge } from '../ui/badge';
+import { Card } from '../ui/card';
 
 const socialLinks = [
   { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/saravanan-gnanaguru/' },
@@ -56,15 +57,17 @@ const HeroSection = () => {
           </div>
           <div className="relative mx-auto h-72 w-72 md:h-96 md:w-96">
             <div className="absolute inset-0 rounded-full bg-primary/10 blur-3xl animate-pulse"></div>
-            <Image
-              src="/saravanan-gnanaguru.jpg"
-              alt="Saravanan Gnanaguru"
-              width={400}
-              height={400}
-              loading="lazy"
-              className="relative z-10 mx-auto rounded-full border-4 border-card shadow-2xl"
-              data-ai-hint="professional portrait man"
-            />
+            <Card className="rounded-full">
+              <Image
+                src="/saravanan-gnanaguru.jpg"
+                alt="Saravanan Gnanaguru"
+                width={400}
+                height={400}
+                loading="lazy"
+                className="relative z-10 mx-auto rounded-full border-4 border-card"
+                data-ai-hint="professional portrait man"
+              />
+            </Card>
           </div>
         </div>
       </div>

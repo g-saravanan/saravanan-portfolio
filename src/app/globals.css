@@ -76,3 +76,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .shadow-material-light {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  }
+  .shadow-material-dark {
+    box-shadow: 0 1px 3px 0 rgb(200 200 200 / 0.1), 0 1px 2px -1px rgb(200 200 200 / 0.1);
+  }
+  .dark .shadow-material-light {
+     box-shadow: 0 1px 3px 0 rgb(200 200 200 / 0.1), 0 1px 2px -1px rgb(200 200 200 / 0.1);
+  }
+}
