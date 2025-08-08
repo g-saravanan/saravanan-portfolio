@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Cpu, CloudCog, CodeXml, Pencil, Users, Briefcase, Phone, BookOpen, Laptop, Milestone, Wrench, AppWindow, Bot, CloudUpload, Orbit } from 'lucide-react';
+import { Cpu, CloudCog, CodeXml, Pencil, Users, Briefcase, Phone, BookOpen, Laptop, Milestone, Wrench, AppWindow, Bot, CloudUpload, Orbit, Zap } from 'lucide-react';
 
 const services = [
   {
@@ -47,6 +47,11 @@ const services = [
     description: 'Building and managing robust MLOps pipelines for production.',
     icon: <Orbit className="h-10 w-10 text-accent" />,
   },
+  {
+    title: 'n8n Workflow Automation',
+    description: 'Creating powerful, custom workflows to automate your business logic.',
+    icon: <Zap className="h-10 w-10 text-accent" />,
+  }
 ];
 
 const ServicesSection = () => {
@@ -57,7 +62,7 @@ const ServicesSection = () => {
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">What I Do</h2>
           <p className="mt-4 text-lg text-muted-foreground">Providing expert services to help your business thrive.</p>
         </div>
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {services.map((service, index) => (
             <Card key={index} className="text-center transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg bg-card">
               <CardHeader>
