@@ -22,6 +22,11 @@ const serviceCategories = [
         description: 'Crafting clear, engaging, and SEO-optimized technical content.',
         icon: <Pencil className="h-10 w-10 text-accent" />,
       },
+      {
+        title: 'GenAI Deployment',
+        description: 'Deploying generative AI solutions to drive innovation and efficiency.',
+        icon: <CloudUpload className="h-10 w-10 text-accent" />,
+      },
     ],
   },
   {
@@ -32,11 +37,6 @@ const serviceCategories = [
         title: 'AI Automation',
         description: 'Leveraging AI to automate and optimize your business processes.',
         icon: <Bot className="h-10 w-10 text-accent" />,
-      },
-      {
-        title: 'GenAI Deployment',
-        description: 'Deploying generative AI solutions to drive innovation and efficiency.',
-        icon: <CloudUpload className="h-10 w-10 text-accent" />,
       },
       {
         title: 'MLOps Pipeline Deployment',
