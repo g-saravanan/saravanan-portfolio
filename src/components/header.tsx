@@ -11,7 +11,6 @@ const navLinks = [
   { href: '#services', label: 'Services' },
   { href: '#projects', label: 'Projects' },
   { href: '#blog', label: 'Blog' },
-  { href: '#resume', label: 'Resume' },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -21,16 +20,16 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-6">
-        <Link href="/" className="flex items-center gap-2 font-bold">
-          <Code2 className="h-6 w-6 text-primary" />
-          <span>G.Saravanan</span>
+        <Link href="/" className="flex items-center gap-2 font-bold text-lg">
+          <Code2 className="h-6 w-6 text-accent" />
+          <span>Saravanan Gnanaguru</span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-accent"
             >
               {label}
             </Link>
@@ -47,15 +46,15 @@ const Header = () => {
             <SheetContent side="right">
               <div className="flex flex-col gap-6 p-6">
                 <Link href="/" className="flex items-center gap-2 font-bold" onClick={() => setMobileMenuOpen(false)}>
-                  <Code2 className="h-6 w-6 text-primary" />
-                  <span>G.Saravanan</span>
+                  <Code2 className="h-6 w-6 text-accent" />
+                  <span>Saravanan G.</span>
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map(({ href, label }) => (
                     <Link
                       key={href}
                       href={href}
-                      className="text-lg font-medium text-foreground transition-colors hover:text-primary"
+                      className="text-lg font-medium text-foreground transition-colors hover:text-accent"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {label}

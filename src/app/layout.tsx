@@ -1,10 +1,17 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
+import { Poppins } from 'next/font/google';
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-poppins',
+});
 
 export const metadata: Metadata = {
-  title: 'G.Saravanan Portfolio',
-  description: 'The personal portfolio of G. Saravanan, showcasing expertise in DevOps, Cloud, and AI.',
+  title: 'Saravanan Gnanaguru | Founder, DevOps & Cloud Expert',
+  description: 'The personal portfolio of Saravanan Gnanaguru, showcasing expertise in DevOps, Cloud, SRE, and AI. Founder of CloudEngine Labs.',
 };
 
 export default function RootLayout({
@@ -14,12 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-      </head>
-      <body className="font-body antialiased">
+      <body className={`${poppins.variable} font-sans antialiased`}>
         {children}
         <Toaster />
       </body>

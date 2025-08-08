@@ -9,7 +9,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Linkedin, Mail, Calendar } from 'lucide-react';
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters.'),
@@ -37,8 +37,8 @@ const ContactSection = () => {
     <section id="contact" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="mb-12 text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">Get In Touch</h2>
-          <p className="mt-4 text-lg text-muted-foreground">Have a project in mind or just want to say hello? Let's connect.</p>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Get In Touch</h2>
+          <p className="mt-4 text-lg text-muted-foreground">Have a project, a question, or just want to connect? Let's talk.</p>
         </div>
         <div className="grid gap-12 md:grid-cols-2">
           <Card>
@@ -88,7 +88,7 @@ const ContactSection = () => {
                       </FormItem>
                     )}
                   />
-                  <Button type="submit" disabled={form.formState.isSubmitting}>
+                  <Button type="submit" disabled={form.formState.isSubmitting} className="bg-primary hover:bg-primary/90">
                     {form.formState.isSubmitting ? 'Sending...' : 'Send Message'}
                   </Button>
                 </form>
@@ -96,21 +96,28 @@ const ContactSection = () => {
             </CardContent>
           </Card>
           <div className="flex flex-col justify-center space-y-6">
-            <h3 className="text-2xl font-semibold">Contact Information</h3>
-            <div className="space-y-4">
-              <a href="mailto:saravanan@example.com" className="flex items-center gap-4 group">
-                <Mail className="h-6 w-6 text-muted-foreground group-hover:text-primary transition-colors" />
-                <span className="text-lg group-hover:text-primary transition-colors">saravanan@example.com</span>
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
-                <Linkedin className="h-6 w-6 text-muted-foreground group-hover:text-primary transition-colors" />
-                <span className="text-lg group-hover:text-primary transition-colors">LinkedIn Profile</span>
-              </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
-                <Github className="h-6 w-6 text-muted-foreground group-hover:text-primary transition-colors" />
-                <span className="text-lg group-hover:text-primary transition-colors">GitHub Profile</span>
-              </a>
-            </div>
+            <h3 className="text-2xl font-semibold">Or Reach Out Directly</h3>
+             <a href="https://calendly.com/your-link" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+                <Calendar className="h-8 w-8 text-muted-foreground group-hover:text-accent transition-colors" />
+                <div>
+                    <span className="text-lg font-semibold group-hover:text-accent transition-colors">Book a Call</span>
+                    <p className="text-sm text-muted-foreground">Schedule a 30-minute chat on Calendly.</p>
+                </div>
+            </a>
+            <a href="mailto:saravanan@cloudenginelabs.io" className="flex items-center gap-4 group">
+                <Mail className="h-8 w-8 text-muted-foreground group-hover:text-accent transition-colors" />
+                <div>
+                    <span className="text-lg font-semibold group-hover:text-accent transition-colors">Email</span>
+                    <p className="text-sm text-muted-foreground">saravanan@cloudenginelabs.io</p>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/saravanan-gnanaguru/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+                <Linkedin className="h-8 w-8 text-muted-foreground group-hover:text-accent transition-colors" />
+                 <div>
+                    <span className="text-lg font-semibold group-hover:text-accent transition-colors">LinkedIn</span>
+                    <p className="text-sm text-muted-foreground">Connect with me professionally.</p>
+                </div>
+            </a>
           </div>
         </div>
       </div>

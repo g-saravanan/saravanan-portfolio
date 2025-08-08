@@ -31,42 +31,54 @@ const generateResumeSchema = z.object({
 });
 
 const originalResume = `
-G. SARAVANAN
-DevOps & Cloud Expert | AI Enthusiast
+SARAVANAN GNANAGURU
+Founder, CloudEngine Labs | DevOps, Cloud & SRE Practitioner
 
 CONTACT
-- Email: saravanan@example.com
-- LinkedIn: linkedin.com/in/gsaravanan
-- GitHub: github.com/gsaravanan
-- Portfolio: gsaravanan.dev
+- Email: saravanan@cloudenginelabs.io
+- LinkedIn: linkedin.com/in/saravanan-gnanaguru
+- GitHub: github.com/chefgs
+- Portfolio: yourdomain.com
 
 SUMMARY
-A results-driven DevOps and Cloud engineer with over a decade of experience in automating and optimizing mission-critical deployments for scalability and high availability. Passionate about building Internal Developer Platforms (IDPs) and leveraging AI/ML to streamline development lifecycles.
+A visionary founder and technology leader with 18+ years of experience driving innovation in software development, DevOps, and cloud infrastructure. Expert in building high-performing teams and scalable systems. Passionate about platform engineering, AI-driven productivity, and empowering the next generation of engineers through mentorship and community building.
 
-EXPERIENCE
+ENTREPRENEURIAL EXPERIENCE
 
-Lead DevOps Engineer | Tech-Solutions Inc. | 2018 - Present
-- Architected and implemented a scalable CI/CD pipeline using Kubernetes, Jenkins, and ArgoCD, reducing deployment times by 70%.
-- Led the migration of monolithic applications to a microservices architecture on AWS, improving system resilience and developer velocity.
-- Developed an Internal Developer Platform (IDP) that standardized development environments and automated infrastructure provisioning, increasing developer productivity by 40%.
+Founder | CloudEngine Labs® | 2023 - Present
+- Launched a technology startup providing specialized DevOps and cloud consulting for product-focused startups.
+- Developed and executed go-to-market strategies, secured initial clients, and established a brand recognized for technical excellence.
+- Architected "AccelSDLC," a proprietary framework for accelerating software delivery and enhancing system reliability.
 
-Senior Cloud Engineer | Cloudify Corp. | 2014 - 2018
-- Managed large-scale cloud infrastructure on GCP and Azure, focusing on cost optimization and security hardening.
-- Automated infrastructure as code (IaC) using Terraform and Ansible, ensuring consistent and repeatable environments.
-- Implemented robust monitoring and alerting systems using Prometheus and Grafana.
+PROFESSIONAL EXPERIENCE
+
+Freelance DevOps Architect & Consultant | 2019 - Present
+- Provided expert consulting for clients like Microsoft Fabric, focusing on DevOps architecture and implementation.
+- Authored SEO-optimized technical content for major cloud vendors, significantly boosting organic traffic and developer engagement.
+
+Principal Engineer & Architect | InfraCloud | 2021 - 2023
+- Led critical DevOps initiatives using Terraform, Ansible, and Kubernetes in multi-cloud environments (AWS, Azure, GCP).
+- Designed and built a scalable Internal Developer Platform (IDP) for a major fintech client, increasing developer productivity by 40%.
+
+DevOps Architect | Wipro Digital | 2020 - 2021
+- Acted as a DevOps evangelist, contributing to the Centre of Excellence and driving the adoption of Infrastructure as Code (IaC) best practices.
+
+Early Career | Accenture, HCL, Capgemini | 2005 - 2019
+- Progressed through various technical roles, from C++ developer to cloud automation architect, building a strong foundation in enterprise software development and infrastructure management.
 
 SKILLS
-- Cloud Platforms: AWS, Google Cloud Platform (GCP), Microsoft Azure
-- Containerization: Docker, Kubernetes, Helm
-- CI/CD: Jenkins, GitLab CI, ArgoCD, CircleCI
-- IaC: Terraform, Ansible, Pulumi
-- Programming: Python, Go, Bash
-- AI/ML Ops: Kubeflow, MLflow, Seldon Core
+- Cloud Platforms: AWS, Azure, GCP
+- DevOps & CI/CD: Terraform, Kubernetes, Docker, Ansible, Jenkins, GitHub Actions
+- Platform Engineering: Backstage, Internal Developer Platforms (IDPs)
+- Programming: Go, Python, Shell Scripting
+- Leadership: Team Building, Mentorship, Technology Evangelism, Public Speaking
+- Content: Technical Writing, SEO, Content Strategy
 
-CERTIFICATIONS
-- Certified Kubernetes Administrator (CKA)
-- AWS Certified DevOps Engineer – Professional
-- Google Cloud Certified Professional Cloud Architect
+COMMUNITY & RECOGNITION
+- AWS Community Builder
+- HashiCorp Ambassador
+- Regular Speaker at tech conferences and meetups
+- Prolific technical blogger on Dev.to and LinkedIn
 `;
 
 export async function generateResumeAction(input: { interests: string }) {
