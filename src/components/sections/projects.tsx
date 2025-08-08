@@ -5,28 +5,28 @@ import { ArrowUpRight } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Cloud-Native Migration for E-commerce Giant',
-    description: 'Led the strategic migration of a monolithic e-commerce platform to a fully cloud-native microservices architecture on AWS using Kubernetes, resulting in a 300% improvement in scalability and 99.99% uptime.',
+    title: 'Founder at CloudEngine Labs®',
+    description: 'Helping product startups with Cloud Technology Solutions, DevOps adoption, Infrastructure Automation, Platform Engineering, and Technical Writing. Visit cloudenginelabs.io for more details.',
     imageUrl: 'https://placehold.co/600x400.png',
-    tech: ['AWS', 'Kubernetes', 'Docker', 'Terraform', 'ArgoCD'],
+    tech: ['Cloud Consulting', 'DevOps', 'IaC', 'Platform Engineering', 'Technical Writing'],
+    link: 'https://cloudenginelabs.io',
+    aiHint: 'startup office'
+  },
+  {
+    title: 'Freelance DevOps Architect & Content Writer',
+    description: 'Providing freelance services in DevOps architecture for Microsoft Fabric and creating organic SEO-optimized technical content for product companies, focusing on cloud, DevOps, and SRE.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    tech: ['Microsoft Azure', 'Power BI', 'Azure DevOps', 'Technical Writing', 'SEO'],
+    link: 'https://dev.to/chefgs',
+    aiHint: 'writing code'
+  },
+  {
+    title: 'Principal Engineer & Architect at InfraCloud',
+    description: 'Led DevOps initiatives as Principal Engineer and Architect, specializing in Terraform, Ansible, Chef, Kubernetes, and multi-cloud environments (AWS, Azure, GCP).',
+    imageUrl: 'https://placehold.co/600x400.png',
+    tech: ['Terraform', 'Ansible', 'Kubernetes', 'AWS', 'GCP', 'Azure'],
     link: '#',
     aiHint: 'cloud infrastructure'
-  },
-  {
-    title: 'CI/CD Pipeline Optimization for FinTech Firm',
-    description: 'Revamped a legacy CI/CD process, reducing build and deployment times from 45 minutes to under 10 minutes. Implemented automated security scanning and quality gates, decreasing critical vulnerabilities in production by 95%.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    tech: ['Jenkins', 'GitLab CI', 'Python', 'SonarQube', 'Ansible'],
-    link: '#',
-    aiHint: 'server room'
-  },
-  {
-    title: 'Internal Developer Platform for a SaaS Company',
-    description: 'Designed and built an IDP from the ground up, providing developers with self-service capabilities for environment provisioning, deployment, and monitoring. This increased developer velocity by 50% and standardized best practices across all teams.',
-    imageUrl: 'https://placehold.co/600x400.png',
-    tech: ['GCP', 'Backstage.io', 'Kubernetes', 'Go', 'Prometheus'],
-    link: '#',
-    aiHint: 'developer platform'
   },
 ];
 
@@ -35,7 +35,7 @@ const ProjectsSection = () => {
     <section id="projects" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="mb-12 text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">Impactful Projects</h2>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">Impactful Projects & Ventures</h2>
           <p className="mt-4 text-lg text-muted-foreground">A selection of my work demonstrating real-world solutions and results.</p>
         </div>
         <div className="grid gap-8">

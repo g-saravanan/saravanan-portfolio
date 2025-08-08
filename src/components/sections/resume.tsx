@@ -18,22 +18,46 @@ import { generateResumeAction } from '@/app/actions';
 
 const timelineData = [
   {
-    role: 'Lead DevOps Engineer',
-    company: 'Tech-Solutions Inc.',
-    period: '2018 - Present',
-    description: 'Architected and implemented a scalable CI/CD pipeline using Kubernetes, Jenkins, and ArgoCD, reducing deployment times by 70%. Led the migration of monolithic applications to a microservices architecture on AWS.',
+    role: 'Founder',
+    company: 'CloudEngine Labs®',
+    period: 'Jul 2023 - Present',
+    description: 'Helping product startups with Cloud Technology Solutions, DevOps adoption, CICD automation, Infrastructure Automation, and Platform Engineering.',
   },
   {
-    role: 'Senior Cloud Engineer',
-    company: 'Cloudify Corp.',
-    period: '2014 - 2018',
-    description: 'Managed large-scale cloud infrastructure on GCP and Azure, focusing on cost optimization and security hardening. Automated infrastructure as code (IaC) using Terraform and Ansible.',
+    role: 'Principal Engineer (DevOps)',
+    company: 'InfraCloud Technologies',
+    period: 'Aug 2022 - May 2023',
+    description: 'Worked with Terraform, Ansible, Chef, AWS, Azure, GCP, Kubernetes, Docker, Go, Shell Scripting, and API development.',
   },
   {
-    role: 'DevOps Engineer',
-    company: 'Innovate Startups',
-    period: '2011 - 2014',
-    description: 'Maintained and improved CI/CD pipelines for a suite of web applications. Gained foundational experience in cloud services and automation scripting.',
+    role: 'DevOps Architect',
+    company: 'Wipro Digital',
+    period: 'Apr 2020 - Jul 2021',
+    description: 'DevOps Architect and Evangelist. Contributed to DevOps CoE, and specialized in implementing IaC using Chef, Ansible & Terraform.',
+  },
+  {
+    role: 'Tech Arch Delivery Associate Manager',
+    company: 'Accenture',
+    period: 'May 2015 - Mar 2019',
+    description: 'Cloud automation architect, specializing in Chef, AWS, Azure, Ruby and Shell scripting. C++ design and development and Team Mentor.',
+  },
+  {
+    role: 'Technical Lead',
+    company: 'HCL Technologies',
+    period: 'Jan 2012 - Jul 2012',
+    description: 'Experience in C, Unix projects and R&D.',
+  },
+  {
+    role: 'Senior Consultant',
+    company: 'Capgemini',
+    period: 'Jan 2010 - Dec 2011',
+    description: 'C++ design & development. VC++, PL/SQL, Unix & Shell Scripting.',
+  },
+  {
+    role: 'Module Lead',
+    company: 'Wipro Technologies',
+    period: 'Aug 2005 - Jan 2010',
+    description: 'C++ design and development. PL/SQL, Unix & Shell Scripting.',
   },
 ];
 

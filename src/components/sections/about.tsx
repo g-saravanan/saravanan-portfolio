@@ -2,12 +2,14 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 const skills = [
-  "AWS", "GCP", "Azure",
-  "Kubernetes", "Docker", "Helm",
-  "Terraform", "Ansible", "Pulumi",
-  "Jenkins", "GitLab CI", "ArgoCD",
-  "Python", "Go", "Bash",
-  "AI/ML Ops", "Kubeflow", "MLflow"
+  "Terraform", "Leadership", "Git", "Docker", "DevOps", "Team Management", 
+  "Kubernetes", "Software Development", "CI/CD", "AWS", "Presales",
+  "Google Cloud Platform (GCP)", "Technical Writing", "Cloud Automation", 
+  "Python", "Github", "Product Development", "Agile Methodologies", "Ansible", 
+  "Microsoft Azure", "Infrastructure as Code (IaC)", "Cloud Computing", 
+  "Solution Architecture", "Microsoft Power BI", "Azure DevOps Services", 
+  "Azure Resource Manager", "Powershell", "Microservices", "Platform as a Service (PAAS)",
+  "Cloud Security", "Scrum"
 ];
 
 const certifications = [
