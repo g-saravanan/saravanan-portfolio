@@ -18,11 +18,6 @@ const serviceCategories = [
         icon: <CloudCog className="h-10 w-10 text-accent" />,
       },
        {
-        title: 'n8n Workflow Automation',
-        description: 'Creating powerful, custom workflows to automate your business logic.',
-        icon: <Zap className="h-10 w-10 text-accent" />,
-      },
-       {
         title: 'Technical Writing & Blogging',
         description: 'Crafting clear, engaging, and SEO-optimized technical content.',
         icon: <Pencil className="h-10 w-10 text-accent" />,
@@ -30,8 +25,8 @@ const serviceCategories = [
     ],
   },
   {
-    value: 'genai',
-    title: 'GenAI Services',
+    value: 'ai-services',
+    title: 'AI Services',
     services: [
       {
         title: 'AI Automation',
@@ -47,6 +42,11 @@ const serviceCategories = [
         title: 'MLOps Pipeline Deployment',
         description: 'Building and managing robust MLOps pipelines for production.',
         icon: <Orbit className="h-10 w-10 text-accent" />,
+      },
+      {
+        title: 'n8n Workflow Automation',
+        description: 'Creating powerful, custom workflows to automate your business logic.',
+        icon: <Zap className="h-10 w-10 text-accent" />,
       },
     ],
   },
