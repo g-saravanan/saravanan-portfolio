@@ -58,7 +58,7 @@ const HeroSection = () => {
           <div className="relative mx-auto h-72 w-72 md:h-96 md:w-96">
             <div className="absolute inset-0 rounded-full bg-primary/10 blur-3xl animate-pulse"></div>
             <Card className="rounded-full">
-              <Image
+              <Image 
                 src="/saravanan-gnanaguru.jpg"
                 alt="Saravanan Gnanaguru"
                 width={400}
