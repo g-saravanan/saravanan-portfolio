@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Rss } from 'lucide-react';
@@ -8,26 +7,20 @@ const blogPosts = [
   {
     title: 'Mastering CI/CD with GitHub Actions',
     description: 'A deep dive into creating robust, scalable, and efficient CI/CD pipelines.',
-    imageUrl: 'https://placehold.co/600x400.png',
     tags: ['#DevOps', '#CI/CD', '#GitHub'],
     link: '#',
-    aiHint: 'code pipeline automation',
   },
   {
     title: 'The Business Case for Platform Engineering',
     description: 'How an Internal Developer Platform (IDP) can boost productivity and innovation.',
-    imageUrl: 'https://placehold.co/600x400.png',
     tags: ['#PlatformEngineering', '#Cloud', '#SRE'],
     link: '#',
-    aiHint: 'developer platform dashboard',
   },
   {
     title: 'Terraform Best Practices for Production',
     description: 'From structuring your code to managing state, here’s how to use Terraform effectively.',
-    imageUrl: 'https://placehold.co/600x400.png',
     tags: ['#Terraform', '#IaC', '#Cloud'],
     link: '#',
-    aiHint: 'infrastructure as code'
   },
 ];
 
@@ -43,11 +36,6 @@ const BlogSection = () => {
           {blogPosts.map((post) => (
             <a href={post.link} key={post.title} target="_blank" rel="noopener noreferrer" className="group block">
               <Card className="flex flex-col h-full overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-accent/50">
-                <CardHeader className="p-0">
-                  <div className="relative aspect-video w-full overflow-hidden">
-                    <Image src={post.imageUrl} alt={post.title} fill className="object-cover transition-transform duration-300 group-hover:scale-105" data-ai-hint={post.aiHint} />
-                  </div>
-                </CardHeader>
                 <CardContent className="flex-grow p-6">
                   <div className="flex flex-wrap gap-2 mb-2">
                     {post.tags.map(tag => (
