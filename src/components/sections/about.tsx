@@ -3,12 +3,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 const skills = [
   "Terraform", "Leadership", "Git", "Docker", "DevOps", "Team Management", 
-  "Kubernetes", "Software Development", "CI/CD", "AWS", "Presales",
-  "Google Cloud Platform (GCP)", "Technical Writing", "Cloud Automation", 
-  "Python", "Github", "Product Development", "Agile Methodologies", "Ansible", 
-  "Microsoft Azure", "Infrastructure as Code (IaC)", "Cloud Computing", 
-  "Solution Architecture", "Microsoft Power BI", "Azure DevOps Services", 
-  "Azure Resource Manager", "Powershell", "Microservices", "Platform as a Service (PAAS)",
+  "Kubernetes", "Software Development", "Continuous Integration and Continuous Delivery (CI/CD)", 
+  "Amazon Web Services (AWS)", "Presales", "Google Cloud Platform (GCP)", "Technical Writing", 
+  "Cloud Automation", "Python (Programming Language)", "Github", "Product Development", 
+  "Agile Methodologies", "Ansible", "Microsoft Azure", "Infrastructure as code (IaC)", 
+  "Cloud Computing", "Solution Architecture", "Microsoft Power BI", "Azure DevOps Services", 
+  "Azure Resource Manager", "Powershell", "Microservices", "Platform as a Service (PAAS)", 
   "Cloud Security", "Scrum"
 ];
 

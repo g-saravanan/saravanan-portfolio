@@ -24,6 +24,12 @@ const timelineData = [
     description: 'Helping product startups with Cloud Technology Solutions, DevOps adoption, CICD automation, Infrastructure Automation, and Platform Engineering.',
   },
   {
+    role: 'Freelance Consultant',
+    company: 'Self-Employed',
+    period: 'Jun 2023 - Present',
+    description: 'Providing services in Cloud Technology, DevOps Consulting, Infrastructure Automation, Platform Engineering, and Technical Writing.',
+  },
+  {
     role: 'Principal Engineer (DevOps)',
     company: 'InfraCloud Technologies',
     period: 'Aug 2022 - May 2023',
