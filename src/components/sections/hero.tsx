@@ -10,10 +10,10 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
           <div className="space-y-6 text-center md:text-left">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl font-headline">
-              G. Saravanan
+              Architecting the Future of Cloud & AI
             </h1>
             <p className="text-lg font-medium text-primary">
-              Expert in DevOps Automation & Cloud Engineering
+              G. Saravanan | DevOps & Cloud Expert | AI Enthusiast
             </p>
             <p className="text-xl text-muted-foreground">
               Transforming development pipelines with scalable infrastructure, internal developer platforms, and AI-driven solutions.
