@@ -1,6 +1,6 @@
 'use client';
 
-import { Download } from 'lucide-react';
+import { Download, Briefcase } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const timelineData = [
@@ -8,31 +8,49 @@ const timelineData = [
     role: 'Founder',
     company: 'CloudEngine Labs®',
     period: 'Jul 2023 - Present',
-    description: 'Key Responsibilities: DevOps & Cloud Consulting, Infrastructure Automation, Platform Engineering setup, Technical Writing services.',
+    description: 'Helping product startups with Cloud Technology Solutions, DevOps adoption, Infrastructure Automation, Platform Engineering, Technical Writing, and team development.',
   },
   {
-    role: 'Freelance Consultant & Writer',
-    company: 'Self-Employed',
+    role: 'Self Employed',
+    company: 'Freelance',
+    period: 'Jun 2023 - Present',
+    description: 'Providing services in Cloud Technology Consulting, DevOps, Infrastructure Automation, Platform Engineering, and Technical Writing.',
+  },
+  {
+    role: 'Technical Content Writer',
+    company: 'Freelance',
     period: 'Jun 2019 - Present',
-    description: 'Key Responsibilities: Providing freelance services in DevOps, cloud architecture, and creating organic SEO-optimized technical content.',
+    description: 'Contributing SEO-optimized technology blogs for product companies, focusing on how-to articles, practical use cases, and best practices for Cloud, DevOps, and SRE tools.',
   },
   {
-    role: 'Principal Engineer & Architect',
-    company: 'InfraCloud',
-    period: 'Aug 2021 - May 2023',
-    description: 'Key Responsibilities: Led DevOps initiatives specializing in Terraform, Ansible, Kubernetes, and multi-cloud environments (AWS, Azure, GCP).',
+    role: 'DevOps Architect (Microsoft Fabric)',
+    company: 'Freelance',
+    period: 'Sep 2024 - Present',
+    description: 'Skills: Microsoft Azure, Power BI, Azure DevOps Services, Azure Resource Manager, Powershell.',
+  },
+  {
+    role: 'Principal Engineer (DevOps)',
+    company: 'InfraCloud Technologies',
+    period: 'Aug 2022 - May 2023',
+    description: 'Terraform | Ansible | Chef | AWS | Azure | GCP | Kubernetes | Docker | Go | Shell Scripting | API development | DevOps Consulting.',
+  },
+  {
+    role: 'Architect',
+    company: 'InfraCloud Technologies',
+    period: 'Aug 2021 - Jul 2022',
+    description: 'Chef | Terraform | Ansible | AWS | Azure | GCP | Kubernetes | Docker | Go | Shell Scripting | API development | DevOps Consulting.',
   },
   {
     role: 'DevOps Architect',
     company: 'Wipro Digital',
     period: 'Apr 2020 - Jul 2021',
-    description: 'Key Responsibilities: DevOps evangelism, implementing IaC using Chef, Ansible & Terraform across multiple cloud platforms.',
+    description: 'DevOps evangelist, implementing IaC using Chef, Ansible & Terraform across multiple cloud platforms (AWS, GCP, Azure).',
   },
    {
     role: 'Tech Arch Delivery Associate Manager',
     company: 'Accenture',
     period: 'May 2015 - Mar 2019',
-    description: 'Key Responsibilities: Cloud automation architect, specializing in Chef, AWS, Azure, Ruby and Shell scripting.',
+    description: 'Cloud automation architect, specializing in Chef, AWS, Azure, Ruby and Shell scripting. C++ design and development and Team Mentor.',
   },
 ];
 
@@ -57,10 +75,10 @@ const ResumeSection = () => {
           {timelineData.map((item, index) => (
             <div key={index} className="relative pl-12 mb-8">
               <div className="absolute left-0 top-1.5 z-10 flex h-8 w-8 -translate-x-1/2 items-center justify-center rounded-full bg-accent text-accent-foreground">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L8.6 3.3a2 2 0 0 0-1.7-.9H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path></svg>
+                <Briefcase className="h-4 w-4" />
               </div>
                <div className="p-4 rounded-lg">
-                <p className="font-semibold text-lg">{item.role}</p>
+                <p className="font-semibold text-lg text-foreground">{item.role}</p>
                 <p className="font-medium text-muted-foreground">{item.company} &middot; {item.period}</p>
                 <p className="mt-2 text-sm text-muted-foreground">{item.description}</p>
               </div>
@@ -69,7 +87,7 @@ const ResumeSection = () => {
         </div>
         
         <div className="mt-12 text-center">
-            <Button size="lg" onClick={handleDownload} className="bg-primary hover:bg-primary/90">
+            <Button size="lg" onClick={handleDownload} className="bg-primary text-primary-foreground hover:bg-primary/90">
                 <Download className="mr-2 h-5 w-5" />
                 Download Resume (PDF)
             </Button>

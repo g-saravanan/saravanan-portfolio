@@ -1,36 +1,36 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Cpu, CloudCog, CodeXml, BrainCircuit, Pencil, Users } from 'lucide-react';
+import { Cpu, CloudCog, CodeXml, Pencil, Users, Briefcase, Phone, BookOpen, Laptop, Milestone, Wrench, AppWindow } from 'lucide-react';
 
 const services = [
   {
     title: 'IT Consulting',
-    description: 'Strategic guidance to align technology with your business goals, from architecture to execution.',
+    description: 'Strategic guidance to align technology with your business goals.',
     icon: <Users className="h-10 w-10 text-accent" />,
   },
   {
-    title: 'DevOps & Cloud Automation',
-    description: 'Expert implementation of CI/CD, IaC, and SRE practices to accelerate your software delivery lifecycle.',
-    icon: <Cpu className="h-10 w-10 text-accent" />,
-  },
-  {
     title: 'Cloud Application Development',
-    description: 'Building scalable, resilient applications on AWS, Azure, and GCP, leveraging Kubernetes and modern architectures.',
+    description: 'Building scalable, resilient applications on AWS, Azure, and GCP.',
     icon: <CloudCog className="h-10 w-10 text-accent" />,
   },
   {
-    title: 'Platform Engineering',
-    description: 'Creating Internal Developer Platforms (IDPs) that improve developer experience and streamline workflows.',
+    title: 'Custom Software Development',
+    description: 'Bespoke software solutions tailored to your specific business needs.',
     icon: <CodeXml className="h-10 w-10 text-accent" />,
   },
   {
+    title: 'Mobile Application Development',
+    description: 'Creating engaging and high-performance mobile apps.',
+    icon: <AppWindow className="h-10 w-10 text-accent" />,
+  },
+  {
     title: 'Technical Writing & Blogging',
-    description: 'Crafting clear, engaging, and SEO-optimized technical content that resonates with developers.',
+    description: 'Crafting clear, engaging, and SEO-optimized technical content.',
     icon: <Pencil className="h-10 w-10 text-accent" />,
   },
   {
     title: 'Career Development & Training',
-    description: 'Mentoring and training teams to build skills in cloud-native technologies and DevOps practices.',
-    icon: <BrainCircuit className="h-10 w-10 text-accent" />,
+    description: 'Mentoring and training teams to build skills in modern technologies.',
+    icon: <Briefcase className="h-10 w-10 text-accent" />,
   },
 ];
 
@@ -44,12 +44,12 @@ const ServicesSection = () => {
         </div>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
-            <Card key={index} className="text-center transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
+            <Card key={index} className="text-center transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg bg-card">
               <CardHeader>
                 <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-accent/10">
                   {service.icon}
                 </div>
-                <CardTitle>{service.title}</CardTitle>
+                <CardTitle className="text-card-foreground">{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">{service.description}</p>
