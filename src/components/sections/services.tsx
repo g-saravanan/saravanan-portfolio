@@ -64,6 +64,12 @@ const serviceCategories = [
         description: 'Creating engaging and high-performance mobile apps.',
         icon: <AppWindow className="h-10 w-10 text-accent" />,
       },
+    ],
+  },
+  {
+    value: 'training-mentoring',
+    title: 'Training & Mentoring',
+    services: [
       {
         title: 'Career Development & Training',
         description: 'Mentoring and training teams to build skills in modern technologies.',
@@ -82,7 +88,7 @@ const ServicesSection = () => {
           <p className="mt-4 text-lg text-muted-foreground">Providing expert services to help your business thrive.</p>
         </div>
         <Tabs defaultValue="devops-cloud" className="w-full">
-          <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 mb-8">
+          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 mb-8">
             {serviceCategories.map((category) => (
               <TabsTrigger key={category.value} value={category.value}>
                 {category.title}
