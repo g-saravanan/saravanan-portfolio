@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Cpu, CloudCog, CodeXml, Pencil, Users, Briefcase, Phone, BookOpen, Laptop, Milestone, Wrench, AppWindow } from 'lucide-react';
+import { Cpu, CloudCog, CodeXml, Pencil, Users, Briefcase, Phone, BookOpen, Laptop, Milestone, Wrench, AppWindow, Bot, CloudUpload, Orbit } from 'lucide-react';
 
 const services = [
   {
@@ -31,6 +31,21 @@ const services = [
     title: 'Career Development & Training',
     description: 'Mentoring and training teams to build skills in modern technologies.',
     icon: <Briefcase className="h-10 w-10 text-accent" />,
+  },
+  {
+    title: 'AI Automation',
+    description: 'Leveraging AI to automate and optimize your business processes.',
+    icon: <Bot className="h-10 w-10 text-accent" />,
+  },
+  {
+    title: 'GenAI Deployment',
+    description: 'Deploying generative AI solutions to drive innovation and efficiency.',
+    icon: <CloudUpload className="h-10 w-10 text-accent" />,
+  },
+  {
+    title: 'MLOps Pipeline Deployment',
+    description: 'Building and managing robust MLOps pipelines for production.',
+    icon: <Orbit className="h-10 w-10 text-accent" />,
   },
 ];
 
