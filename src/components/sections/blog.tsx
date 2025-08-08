@@ -22,6 +22,12 @@ const blogPosts = [
     tags: ['#Terraform', '#IaC', '#Cloud'],
     link: '#',
   },
+  {
+    title: 'Cloud Architecture Implementation',
+    description: 'A guide to designing and implementing scalable and resilient cloud architectures.',
+    tags: ['#Cloud', '#Architecture', '#AWS'],
+    link: '#',
+  },
 ];
 
 const BlogSection = () => {
@@ -32,7 +38,7 @@ const BlogSection = () => {
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">From the Blog</h2>
           <p className="mt-4 text-lg text-muted-foreground">Insights on DevOps, Cloud, and AI-driven productivity.</p>
         </div>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
           {blogPosts.map((post) => (
             <a href={post.link} key={post.title} target="_blank" rel="noopener noreferrer" className="group block">
               <Card className="flex flex-col h-full overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-accent/50">
